@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef52fbf5bed04ae282490d4bcf138995)](https://www.codacy.com/manual/jgodara/miniauth?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=realbucksavage/miniauth&amp;utm_campaign=Badge_Grade)
+
 # MiniAuth - A small UAA server implemented in go.
 
 ---
