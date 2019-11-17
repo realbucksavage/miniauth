@@ -7,7 +7,7 @@ import (
 	"github.com/realbucksavage/miniauth/database/models"
 )
 
-func Initialize() (*gorm.DB, error) {
+func Initialize() *gorm.DB {
 	db, err := gorm.Open("postgres", "host=localhost port=5432 user=miniauth dbname=miniauth password=miniauth sslmode=disable")
 	if err != nil {
 		panic(err)
@@ -16,5 +16,5 @@ func Initialize() (*gorm.DB, error) {
 	db.LogMode(true)
 	models.AutoMigrate(db)
 	fmt.Printf("Database connection ready.\n")
-	return db, err
+	return db
 }
